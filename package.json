@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "pug dev/pages -P --out ./doc",
-    "prod": "pug index.pug -o ../doc/"
+    "dev": "pug dev/pages -P --out ./docs",
+    "prod": "pug dev/pages --out ./docs"
   },
   "author": "Alexander Karachevtsev",
   "license": "ISC",
