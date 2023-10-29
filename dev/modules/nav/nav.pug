@@ -1,0 +1,9 @@
+include ./nav-list
+
+mixin nav(activeName)
+  nav.nav 
+    .container 
+      .nav-row
+        include ./logo.pug
+        include ./darkmode-button
+        +navList(activeName)

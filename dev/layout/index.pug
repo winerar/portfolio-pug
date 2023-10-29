@@ -1,0 +1,16 @@
+include ../variables/variables
+include ../modules/nav/nav
+
+doctype html
+html(lang="en")
+  head
+    title=pageTitle
+    link(rel="shortcut icon", href="./img/icons/favicon.svg", type="image/x-icon")
+    link(rel="stylesheet", href="./css/reset.css")
+    link(rel="stylesheet", href="./css/main.css")
+
+  body
+    +nav(activePage)
+    block layout
+    script(src="./js/main.js") 
+    include ../modules/footer

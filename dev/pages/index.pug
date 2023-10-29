@@ -1,0 +1,13 @@
+extends ../layout/projects
+
+block variables
+  - pageTitle = 'Developer Portfolio'
+  - pageHeader = 'Projects'
+  - activePage = 'Projects'
+  - var navLinks = [{link: './index.html', name: 'Projects',}, {link: './skills.html', name: 'Skills',}, {link: './contact.html', name: 'Contact',}]
+
+block content
+  main.section 
+    .container 
+      h2.title-1=pageHeader
+      include ../modules/projects-list

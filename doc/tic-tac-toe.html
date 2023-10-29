@@ -1,0 +1,61 @@
+
+<script>
+  module.exports = {
+    pageTitle: pageTitle,
+    pageHeader: pageHeader,
+    activePage: activePage
+  }
+</script><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tic-Tac-Toe</title>
+    <link rel="shortcut icon" href="./img/icons/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <nav class="nav"> 
+      <div class="container"> 
+        <div class="nav-row"><a class="logo" href="./index.html"><strong>Developer</strong> Portfolio</a>
+          <button class="dark-mode-btn"><img class="dark-mode-btn__icon" src="./img/icons/sun-fill.svg" alt="Light mode"/><img class="dark-mode-btn__icon" src="./img/icons/moon-stars-fill.svg" alt="Night mode"/></button>
+          <ul class="nav-list">
+            <li class="nav-list__item"><a class="nav-list__link nav-list__link--active" href="./index.html">Projects</a>
+            </li>
+            <li class="nav-list__item"><a class="nav-list__link" href="./skills.html">Skills</a>
+            </li>
+            <li class="nav-list__item"><a class="nav-list__link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="section">
+      <div class="container">
+        <div class="project-details">
+          <h1 class="title-1">Tic-Tac-Toe with AI</h1><img class="project-details__cover" src="./img/projects/tic-tac-toe.png" alt="Tic-Tac-Toe with AI"/>
+          <div class="project-details__desc">
+            <p>Skills: React, Node.js, MongoDB</p>
+          </div><a class="btn-outline" href="https://github.com/winerar/tic-tac-toe">
+            <svg class="btn-outline__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" viewbox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"> </path>
+            </svg>Github Repo</a>
+        </div>
+      </div>
+    </main>
+    <script src="./js/main.js"> </script>
+    <footer class="footer">
+      <div class="container"> 
+        <div class="footer__wrapper"> 
+          <ul class="social">
+            <li class="social__item"> <a href="https://github.com/winerar" alt="GitHub"><img class="social__icon" src="./img/icons/github.svg" alt="GitHub"></a></li>
+            <li class="social__item"> <a href="https://www.linkedin.com/in/alexander-karachevtsev/" alt="LinkedIn"><img class="social__icon" src="./img/icons/linkedin.svg" alt="LinkedIn"></a></li>
+            <li class="social__item"> <a href="https://t.me/winerar" alt="Telegram"><img class="social__icon" src="./img/icons/telegram.svg" alt="Telegram"></a></li>
+          </ul>
+          <div class="copyright"> 
+            <p>© 2023 Alexander Karachevtsev</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

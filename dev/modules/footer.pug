@@ -1,0 +1,13 @@
+block footerVars 
+  - var socialItems = [{name: 'GitHub', link: 'https://github.com/winerar', img: './img/icons/github.svg'}, {name: 'LinkedIn', link: 'https://www.linkedin.com/in/alexander-karachevtsev/', img: './img/icons/linkedin.svg'}, {name: 'Telegram', link: 'https://t.me/winerar', img: './img/icons/telegram.svg'}]
+
+footer.footer
+  .container 
+    .footer__wrapper 
+      ul.social
+        for item in socialItems 
+          li.social__item 
+            a(href=item.link alt=item.name)
+              img(src=item.img alt=item.name class='social__icon')
+      .copyright 
+        p © 2023 Alexander Karachevtsev

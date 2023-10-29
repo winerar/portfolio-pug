@@ -1,0 +1,71 @@
+
+<script>
+  module.exports = {
+    pageTitle: pageTitle,
+    pageHeader: pageHeader,
+    activePage: activePage
+  }
+</script><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Developer Portfolio</title>
+    <link rel="shortcut icon" href="./img/icons/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <nav class="nav"> 
+      <div class="container"> 
+        <div class="nav-row"><a class="logo" href="./index.html"><strong>Developer</strong> Portfolio</a>
+          <button class="dark-mode-btn"><img class="dark-mode-btn__icon" src="./img/icons/sun-fill.svg" alt="Light mode"/><img class="dark-mode-btn__icon" src="./img/icons/moon-stars-fill.svg" alt="Night mode"/></button>
+          <ul class="nav-list">
+            <li class="nav-list__item"><a class="nav-list__link nav-list__link--active" href="./index.html">Projects</a>
+            </li>
+            <li class="nav-list__item"><a class="nav-list__link" href="./skills.html">Skills</a>
+            </li>
+            <li class="nav-list__item"><a class="nav-list__link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="header__wrapper">
+        <h1 class="header__title">
+          <strong>Hi, my name is <em>Alexander</em></strong>
+          <br>
+          I'm a frontend developer
+        </h1>
+        <div class="header__text"> 
+          <p>with passion for learning and creating.</p>
+        </div><a class="btn" href="./files/alexander-karachevtsev-cv-en.pdf" download>Download CV</a>
+      </div>
+    </header>
+    <main class="section">
+      <main class="section"> 
+        <div class="container"> 
+          <h2 class="title-1">Projects</h2>
+          <ul class="projects">
+                      <li class="project"> <a class="project__link" href="./tic-tac-toe.html"><img class="project__img" src="./img/projects/tic-tac-toe-small.png" alt="Tic-Tac-Toe with AI">
+                          <h3 class="project__title">Tic-Tac-Toe with AI</h3></a></li>
+          </ul>
+        </div>
+      </main>
+    </main>
+    <script src="./js/main.js"> </script>
+    <footer class="footer">
+      <div class="container"> 
+        <div class="footer__wrapper"> 
+          <ul class="social">
+            <li class="social__item"> <a href="https://github.com/winerar" alt="GitHub"><img class="social__icon" src="./img/icons/github.svg" alt="GitHub"></a></li>
+            <li class="social__item"> <a href="https://www.linkedin.com/in/alexander-karachevtsev/" alt="LinkedIn"><img class="social__icon" src="./img/icons/linkedin.svg" alt="LinkedIn"></a></li>
+            <li class="social__item"> <a href="https://t.me/winerar" alt="Telegram"><img class="social__icon" src="./img/icons/telegram.svg" alt="Telegram"></a></li>
+          </ul>
+          <div class="copyright"> 
+            <p>© 2023 Alexander Karachevtsev</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

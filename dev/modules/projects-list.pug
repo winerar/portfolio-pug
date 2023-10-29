@@ -1,0 +1,12 @@
+block projectsVariables
+  - const projectsList = [{name: 'Tic-Tac-Toe with AI', link: './tic-tac-toe.html', img: './img/projects/tic-tac-toe-small.png'}]
+
+mixin project(link, title, image)
+  li.project 
+    a(href=link class='project__link')
+      img(src=image, alt=title class='project__img')
+      h3.project__title=title
+
+ul.projects
+  for item in projectsList
+    +project(item.link, item.name, item.img)

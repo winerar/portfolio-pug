@@ -1,0 +1,19 @@
+include ../variables/variables
+include ../modules/nav/nav
+
+- var navLinks = [{link: '../index.html', name: 'Projects',}, {link: '../skills.html', name: 'Skills',}, {link: '../contact.html', name: 'Contact',}]
+
+doctype html
+html(lang="en")
+  head
+    title=pageTitle
+    link(rel="shortcut icon", href="../img/icons/favicon.svg", type="image/x-icon")
+    link(rel="stylesheet", href="../css/reset.css")
+    link(rel="stylesheet", href="../css/main.css")
+
+  body
+    +nav(navLinks, 'Projects')
+    main.section
+      block content
+    script(src="../js/main.js") 
+    include ../modules/footer

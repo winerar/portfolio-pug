@@ -1,0 +1,15 @@
+block variables
+
+- var navLinks = [{link: './index.html', name: 'Projects',}, {link: './skills.html', name: 'Skills',}, {link: './contact.html', name: 'Contact',}]
+
+mixin navItem(link, name, active)
+  li.nav-list__item
+    if (active)
+      a(href=link).nav-list__link.nav-list__link--active=name
+    else 
+      a(href=link).nav-list__link=name  
+
+mixin navList(activeLink)
+  ul.nav-list
+    for item in navLinks
+      +navItem(item.link, item.name, activeLink==item.name)

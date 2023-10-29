@@ -1,0 +1,11 @@
+block vars
+  - var skills = [{category: 'Frontend', skills: 'JavaScript, TypeScript, ReactJS, Redux, HTML, CSS, NPM, Bootstrap, MaterialUI'}, {category: 'Backend', skills: 'NodeJS, Express, MongoDB'}]
+
+mixin skill(category, skills)
+  li.content-list__item
+    h2.title-2=category 
+    p=skills
+
+ul.content-list 
+  for item in skills 
+    +skill(item.category, item.skills)
