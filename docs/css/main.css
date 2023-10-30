@@ -268,8 +268,8 @@ a {
   width: fit-content;
   align-items: center;
   padding: 12px 24px;
-  height: 28px;
-  border-radius: 30px;
+  /* height: 28px; */
+  border-radius: 300px;
   background-color: var(--accent);
   color: var(--white);
   font-size: 16px;
@@ -294,7 +294,7 @@ a {
   column-gap: 10px;
   align-items: center;
   padding: 12px 24px;
-  border-radius: 30px;
+  border-radius: 300px;
   border: 2px solid var(--btn-outline);
   background-color: var(--btn-outline-bg);
   color: var(--btn-outline);
@@ -322,6 +322,8 @@ a {
 
 .btn-outline__svg {
   fill: var(--btn-outline);
+  width: 24px;
+  height: 24px;
   transition: all 0.2s ease-in;
 }
 
@@ -451,13 +453,30 @@ a {
   }
 
   .btn {
-    font-size: 24px;
+    padding: 24px 48px;
+    font-size: 36px;
     font-weight: 400;
   }
 
+  .btn:hover {
+    padding: 24px 54px;
+  }
+
   .btn-outline {
-    font-size: 24px;
+    padding: 24px 48px;
+    font-size: 36px;
     font-weight: 400;
+  }
+
+  .btn-outline:hover {
+    padding: 24px 54px;
+  }
+
+  .btn-outline__svg {
+    fill: var(--btn-outline);
+    width: 36px;
+    height: 36px;
+    transition: all 0.2s ease-in;
   }
 
   .logo {
@@ -466,7 +485,7 @@ a {
 
   .nav-list {
     row-gap: 20px;
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .nav-row {
@@ -477,12 +496,20 @@ a {
     min-height: 800px;
   }
 
+  .header__wrapper {
+    max-width: 920px;
+  }
+
   .header__title {
-    font-size: 50px;
+    font-size: 54px;
   }
 
   .header__title strong {
-    font-size: 60px;
+    font-size: 72px;
+  }
+
+  .header__text {
+    font-size: 36px;
   }
 
   .section {
@@ -491,16 +518,16 @@ a {
 
   .title-1 {
     margin-bottom: 30px;
-    font-size: 60px;
+    font-size: 72px;
   }
 
   .title-2 {
     margin-bottom: 10px;
-    font-size: 40px;
+    font-size: 54px;
   }
 
   .project__title {
-    font-size: 30px;
+    font-size: 42px;
   }
 
   .content-list {
@@ -508,12 +535,12 @@ a {
   }
 
   .content-list__item {
-    font-size: 24px;
+    font-size: 36px;
   }
 
   .project-details__desc {
     margin-bottom: 30px;
-    font-size: 32px;
+    font-size: 42px;
   }
 
   .dark-mode-btn {
@@ -536,7 +563,7 @@ a {
   }
 
   .social__icon {
-    width: 56px;
+    width: 72px;
   }
 
   .footer {
@@ -548,7 +575,7 @@ a {
   }
 
   .copyright {
-    font-size: 24px;
+    font-size: 36px;
   }
 }
 
