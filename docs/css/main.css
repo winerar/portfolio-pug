@@ -412,10 +412,23 @@ a {
 /* Footer */
 
 .footer {
+  position: relative;
   margin-top: auto;
   padding: 60px 0 50px;
   background-color: var(--dark-bg);
   color: var(--header-text);
+}
+
+.footer::after {
+  margin-bottom: -100px;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  content: "";
+  display: block;
+  background-color: var(--dark-bg);
+  height: 100px;
+  width: 100%;
 }
 
 .footer__wrapper {
