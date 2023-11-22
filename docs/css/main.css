@@ -419,7 +419,7 @@ a {
   color: var(--header-text);
 }
 
-.footer::after {
+/* .footer::after {
   margin-bottom: -100px;
   position: absolute;
   bottom: -100px;
@@ -429,7 +429,7 @@ a {
   background-color: var(--dark-bg);
   height: 100px;
   width: 100%;
-}
+} */
 
 .footer__wrapper {
   display: flex;
